@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe9d19c4-6cb8-4a2c-9636-435c15a8f104" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/java/code/vn/SongController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/java/code/vn/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/java/code/vn/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/java/code/vn/modell/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/java/code/vn/modell/SongForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/java/code/vn/service/SongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/java/code/vn/service/SongServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/resources/file-update.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/webapp/WEB-INF/views/music/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BT/upListening/src/main/webapp/WEB-INF/views/music/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/vn/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/vn/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/vn/model/ProductForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss05/BT/buc_anh/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/build/classes/java/main/codegym/vn/config/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/build/classes/java/main/codegym/vn/config/AppConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/build/classes/java/main/codegym/vn/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/build/classes/java/main/codegym/vn/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/build/classes/java/main/codegym/vn/repository/StudentRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/build/classes/java/main/codegym/vn/repository/StudentRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/build/libs/demoSpringGradle-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/build/libs/demoSpringGradle-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/java/codegym/vn/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/java/codegym/vn/config/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/java/codegym/vn/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/java/codegym/vn/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/java/codegym/vn/repository/StudentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/java/codegym/vn/repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/webapp/WEB-INF/thymeleaf/student/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/webapp/WEB-INF/thymeleaf/student/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/webapp/WEB-INF/thymeleaf/student/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demoSpringGradle/src/main/webapp/WEB-INF/thymeleaf/student/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT/yTe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BT/yTe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT/yTe/src/main/java/code/vn/controller/MedicalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BT/yTe/src/main/java/code/vn/controller/MedicalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/vn/config/AppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/vn/config/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/vn/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/vn/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/vn/model/ProdcuctForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/vn/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/vn/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/vn/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/vn/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/vn/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/vn/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/layout.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2TufpAdaAJ6rV9iZeoQay4xwyed" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code_Code_Code(G)/Module-4/demoSpringGradle&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;080f1ea7ca1f6648892f9e8a9c74ab95&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.76" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : com.example : upfile-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="55189b41-4254-4f7d-a668-e842856256d3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54918" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : upfile-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe9d19c4-6cb8-4a2c-9636-435c15a8f104" name="Changes" comment="" />
+      <created>1691898068033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691898068033</updated>
+      <workItem from="1691898069208" duration="1257000" />
+      <workItem from="1692016896895" duration="6525000" />
+      <workItem from="1692190778967" duration="793000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

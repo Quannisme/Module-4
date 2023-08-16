@@ -1,5 +1,6 @@
 package code.vn.service;
 
+
 import code.vn.model.Product;
 
 import java.util.List;
@@ -14,4 +15,5 @@ public interface IProductService {
     void update(int id, Product product);
 
     void remove(int id);
+
 }

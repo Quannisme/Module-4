@@ -5,6 +5,7 @@ import code.vn.model.Product;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ProductService implements IProductService {
     private List<Product> products = new ArrayList<>();
 
@@ -22,7 +23,6 @@ public class ProductService implements IProductService {
     public Product findById(int id) {
         return products.get(id);
     }
-
 
     @Override
     public void update(int id, Product product) {
@@ -43,4 +43,5 @@ public class ProductService implements IProductService {
             }
         }
     }
+
 }

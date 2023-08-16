@@ -3,52 +3,50 @@ package codegym.vn.repository;
 import codegym.vn.entity.Student;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 @Repository
+@Transactional
 public class StudentRepositoryImpl implements StudentRepository {
-    private static Map<String, Student> studentMap;
 
-    static {
-        studentMap = new HashMap<>();
-        studentMap.put("SV001", new Student("SV001", "Hải", "Da Nang"));
-        studentMap.put("SV002", new Student("SV002", "Lan", "Da Nang"));
-        studentMap.put("SV003", new Student("SV003", "Khanh", "Quang Nam"));
-        studentMap.put("SV004", new Student("SV004", "Thanh", "Da Nang"));
-        studentMap.put("SV005", new Student("SV005", "Hung", "Da Nang"));
-    }
+    @PersistenceContext
+    EntityManager entityManager;
 
     @Override
     public void create(Student student) {
-        if (!studentMap.containsKey(student.getId())) {
-            studentMap.put(student.getId(), student);
-        }
+        entityManager.persist(student);
     }
 
     @Override
     public void delete(Student student) {
-        if (studentMap.containsKey(student.getId())) {
-            studentMap.remove(student.getId());
-        }
+        entityManager.remove(student);
     }
 
     @Override
     public void update(Student student) {
-        if (studentMap.containsKey(student.getId())) {
-            studentMap.put(student.getId(), student);
-        }
+        entityManager.merge(student);
     }
 
     @Override
     public Student findById(String id) {
-        return studentMap.get(id);
+        return entityManager.find(Student.class, id);
     }
 
     @Override
     public List<Student> findAll() {
-        return new ArrayList<>(studentMap.values());
+        return entityManager.createQuery("from Student s").getResultList();
+    }
+
+    public List<Student> findAllByName(String name) {
+        return entityManager
+                .createQuery("select s from Student s where s.name like :name")
+                .setParameter("name", "%" + name + "%")
+                .getResultList();
     }
 }

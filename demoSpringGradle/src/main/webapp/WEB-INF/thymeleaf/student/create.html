@@ -25,14 +25,14 @@
       <td>Address</td>
       <td><input type="text" th:field="*{address}"/></td>
     </tr>
-    <tr>
+    <!--<tr>
       <td>Hobby</td>
       <td>
         <span th:each="h : ${hobbies}" >
           <input type="checkbox" th:field="*{hobbies}" th:value="${h}" th:id="${h}"> <label th:text="${h}" th:for="${h}"></label>
         </span>
       </td>
-    </tr>
+    </tr>-->
     <tr>
       <td colspan="2">
         <input type="submit" value="Create">

@@ -2,14 +2,22 @@ package codegym.vn.entity;
 
 import org.springframework.util.StringUtils;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.List;
 
+@Entity
+@Table(name = "Students")
 public class Student {
+    @Id
+    @Column(name = "student_id", columnDefinition = "varchar(20)")
     private String id;
     private String name;
     private String address;
 
-    private List<String> hobbies;
+//    private List<String> hobbies;
 
     public Student(){
 
@@ -25,16 +33,16 @@ public class Student {
         this.id = id;
         this.name = name;
         this.address = address;
-        this.hobbies = hobbies;
+//        this.hobbies = hobbies;
     }
 
-    public List<String> getHobbies() {
-        return hobbies;
-    }
+//    public List<String> getHobbies() {
+//        return hobbies;
+//    }
 
-    public void setHobbies(List<String> hobbies) {
-        this.hobbies = hobbies;
-    }
+//    public void setHobbies(List<String> hobbies) {
+//        this.hobbies = hobbies;
+//    }
 
     public String getId() {
         return id;
@@ -60,20 +68,20 @@ public class Student {
         this.address = address;
     }
 
-    public String displayHobbies() {
-        if (hobbies == null) {
-            return "";
-        }
-        StringBuilder builder = new StringBuilder();
-        boolean flag = true;
-        for (String h: hobbies) {
-            if (flag) {
-                flag = false;
-            } else {
-                builder.append(",");
-            }
-            builder.append(h);
-        }
-        return builder.toString();
-    }
+//    public String displayHobbies() {
+//        if (hobbies == null) {
+//            return "";
+//        }
+//        StringBuilder builder = new StringBuilder();
+//        boolean flag = true;
+//        for (String h: hobbies) {
+//            if (flag) {
+//                flag = false;
+//            } else {
+//                builder.append(",");
+//            }
+//            builder.append(h);
+//        }
+//        return builder.toString();
+//    }
 }
