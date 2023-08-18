@@ -7,11 +7,13 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import java.util.List;
+
 @Repository
 @Transactional
-public class BucAnhRepositoryImp implements IBucAnhRepository{
+public class BucAnhRepositoryImp implements BucAnhRepository {
     @PersistenceContext
     EntityManager entityManager;
+
     @Override
     public List<BucAnh> findAll() {
         return entityManager.createQuery("from BucAnh b").getResultList();

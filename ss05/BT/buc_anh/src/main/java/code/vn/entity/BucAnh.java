@@ -18,8 +18,8 @@ public class BucAnh {
     public BucAnh() {
     }
 
-    public BucAnh(String id,String view, String author, String feedback) {
-        this.id=id;
+    public BucAnh(String id, String view, String author, String feedback) {
+        this.id = id;
         this.view = view;
         this.author = author;
         this.feedback = feedback;

@@ -14,23 +14,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/picture")
 public class BucAnhController {
-    private BucAnhService bucAnh=new BucAnhServiceImpl();
+    private BucAnhService bucAnh = new BucAnhServiceImpl();
+
     @Autowired
-    public BucAnhController(BucAnhService bucAnh){ this.bucAnh=bucAnh;}
+    public BucAnhController(BucAnhService bucAnh) {
+        this.bucAnh = bucAnh;
+    }
+
     @GetMapping("/")
-    public String viewList(Model model)
-    {
-        model.addAttribute("feed",bucAnh.findAll());
+    public String viewList(Model model) {
+        model.addAttribute("feed", bucAnh.findAll());
         return "picture/list";
     }
+
     @GetMapping("/form")
-    public String viewForm(Model model)
-    {
-        model.addAttribute("feedback",new BucAnh());
+    public String viewForm(Model model) {
+        model.addAttribute("feedback", new BucAnh());
         return "/picture/form";
     }
+
     @PostMapping("/form")
-    public String doForm(Model model , @ModelAttribute("feedback") BucAnh bucAnh1 ){
+    public String doForm(Model model, @ModelAttribute("feedback") BucAnh bucAnh1) {
         bucAnh.create(bucAnh1);
         return "redirect:/picture/";
     }

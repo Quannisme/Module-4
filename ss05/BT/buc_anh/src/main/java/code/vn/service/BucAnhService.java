@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface BucAnhService {
     List<BucAnh> findAll();
+
     void create(BucAnh bucAnh);
 }
