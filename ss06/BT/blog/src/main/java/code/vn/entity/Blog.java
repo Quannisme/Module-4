@@ -16,12 +16,12 @@ public class Blog {
     private String name;
     private String title;
     private String content;
-//    @DateTimeFormat(pattern = "yyyy-MM-dd")
-//    private Date datePush;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date datePush;
 
-    private String datePush;
+//    private String datePush;
 
-    public Blog(String id, String name, String title, String content, String datePush) {
+    public Blog(String id, String name, String title, String content, Date datePush) {
         this.id = id;
         this.name = name;
         this.title = title;
@@ -64,11 +64,11 @@ public class Blog {
         this.content = content;
     }
 
-    public String getDatePush() {
+    public Date getDatePush() {
         return datePush;
     }
 
-    public void setDatePush(String datePush) {
+    public void setDatePush(Date datePush) {
         this.datePush = datePush;
     }
 }
