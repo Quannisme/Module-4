@@ -11,6 +11,8 @@ import org.springframework.validation.Validator;
 import javax.validation.ConstraintViolation;
 import javax.validation.executable.ExecutableValidator;
 import javax.validation.metadata.BeanDescriptor;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.Set;
 @Component
 public class UserValidator implements Validator {
@@ -29,6 +31,7 @@ public class UserValidator implements Validator {
         }
         User user=(User) target;
         String userId =user.getId();
+        LocalDate userBirth=user.getBirthday();
         if (userId.length() != 4) {
             errors.rejectValue("id", "User.id.length",
                     new String[]{"4"}, "ID phải có 5 ký tự");
@@ -40,5 +43,18 @@ public class UserValidator implements Validator {
                     null, "ID đã tồn tại");
             // khi mà User.exist k có trong messages.properties thì sẽ hiện thị cái ID đã tồn tại
         }
+        if(userBirth==null)
+        {
+            errors.rejectValue("birthday", "User.null",null,"Nhap vao de");
+        } else {
+            LocalDate currentDate = LocalDate.now();
+            Period period = Period.between(userBirth, currentDate);
+            int age = period.getYears();
+            if (age < 18) {
+                errors.rejectValue("birthday" , "User.age", null, "Tuoi phai tren 18");
+            }
+        }
+
+
     }
 }

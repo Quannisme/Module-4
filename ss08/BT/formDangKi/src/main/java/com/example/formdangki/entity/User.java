@@ -5,9 +5,11 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -26,14 +28,14 @@ public class User {
     private String phoneNumber;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
 //    @Pattern(regexp = "^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/((19|20)\\d{2})$" ,message = "{User.age}")
-    private Date birthday;
+    private LocalDate birthday;
     @Pattern(regexp = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" ,message = "{User.email}")
     private String email;
 
     public User() {
     }
 
-    public User(String id, String firstName, String lastName, String phoneNumber, Date birthday, String email) {
+    public User(String id, String firstName, String lastName, String phoneNumber, LocalDate birthday, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -74,11 +76,11 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public Date getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
 
