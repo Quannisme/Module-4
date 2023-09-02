@@ -19,12 +19,12 @@ public class BlogController {
 //    }
     @GetMapping("/create")
     public String viewCreate(Model model) {
-        model.addAttribute("blog", new Blog());
+        model.addAttribute("blog1", new Blog());
         return "/blog/create";
     }
 
     @PostMapping("/create")
-    public String doCreate(@ModelAttribute Blog blog) {
+    public String doCreate(@ModelAttribute("blog1") Blog blog) {
         System.out.println("8999");
         blogService.create(blog);
         return "redirect:/blog/";
@@ -33,6 +33,30 @@ public class BlogController {
     @GetMapping("/")
     public String viewList(Model model) {
         model.addAttribute("blogs", blogService.findAll());
-        return "/blog/list";
+        return "blog/list";
+    }
+    @GetMapping("/detail")
+    public String viewDetail(@RequestParam("id") String id, Model model)
+    {
+        model.addAttribute("blog",blogService.findById(id));
+        return "blog/detail";
+    }
+    @GetMapping("/delete")
+    public String doDelete(@RequestParam("id") String id,@ModelAttribute Blog blogs)
+    {
+        blogService.deleteBlog(id);
+        return "redirect:/blog/";
+    }
+    @GetMapping("/update")
+    public String viewUpdate(Model model,@RequestParam("id")String id)
+    {
+        model.addAttribute("blog",blogService.findById(id));
+        return "blog/update";
+    }
+    @PostMapping("/update")
+    public String doUpdate(@ModelAttribute("blog") Blog blog)
+    {
+        blogService.update(blog);
+        return "redirect:/blog/";
     }
 }

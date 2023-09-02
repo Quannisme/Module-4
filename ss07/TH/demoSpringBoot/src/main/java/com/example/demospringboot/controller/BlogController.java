@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -51,11 +52,13 @@ public class BlogController {
     @GetMapping("/Pagging")
     public String viewListPaging(Model model,
                                  @RequestParam("page")Optional<Integer>page,
-                                 @RequestParam("size")Optional<Integer>size)
+                                 @RequestParam("size")Optional<Integer>size,
+                                 @RequestParam("sort")Optional<String>sort)
     {
         int currentPage=page.orElse(1);
         int currentSize=size.orElse(3);
-        Pageable pageable= PageRequest.of(currentPage-1,currentSize);
+        String currentSort=sort.orElse("datePublish");
+        Pageable pageable= PageRequest.of(currentPage-1,currentSize, Sort.by(currentSort).descending());
         Page<Blog2>blog2s=blog.findALl(pageable);
         model.addAttribute("blog",blog2s);
         int totalPage = blog2s.getTotalPages();

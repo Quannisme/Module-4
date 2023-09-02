@@ -1,6 +1,10 @@
 package com.example.demospringboot.entity;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
+import java.sql.Date;
+import java.time.LocalDate;
 
 @Entity
 public class Blog2 {
@@ -10,6 +14,8 @@ public class Blog2 {
     private String nameBlog;
     private String titleBlog;
     private String contentBlog;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate datePublish;
     @ManyToOne
     @JoinColumn(name = "idCategory")
     private Category category;
@@ -17,12 +23,21 @@ public class Blog2 {
     public Blog2() {
     }
 
-    public Blog2(String idBlog, String nameBlog, String titleBlog, String contentBlog, Category idCategory) {
+    public Blog2(String idBlog, String nameBlog, String titleBlog, String contentBlog, LocalDate datePublish, Category category) {
         this.idBlog = idBlog;
         this.nameBlog = nameBlog;
         this.titleBlog = titleBlog;
         this.contentBlog = contentBlog;
-        this.category = idCategory;
+        this.datePublish = datePublish;
+        this.category = category;
+    }
+
+    public LocalDate getDatePublish() {
+        return datePublish;
+    }
+
+    public void setDatePublish(LocalDate datePublish) {
+        this.datePublish = datePublish;
     }
 
     public String getIdBlog() {

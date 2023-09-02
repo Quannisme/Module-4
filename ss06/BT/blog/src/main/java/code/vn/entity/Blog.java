@@ -16,7 +16,7 @@ public class Blog {
     private String name;
     private String title;
     private String content;
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+//    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date datePush;
 
 //    private String datePush;
