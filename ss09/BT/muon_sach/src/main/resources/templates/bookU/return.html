@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/bookU/return}" method="post" th:object="${bookU}">
+    <input type="hidden" th:value="${book.idBook}" th:attr="name='book'">
+    <table>
+        <tr>
+            <td>ID Book</td>
+            <td th:text="${book.idBook}">
+                <input type="hidden" id="book" name="book" th:value="*{book}">
+            </td>
+        </tr>
+        <tr>
+            <td>CODE</td>
+            <td>
+                <input type="text" th:field="*{id}">
+            </td>
+        </tr>
+        <tr>
+            <td>ID USER</td>
+            <td>
+                <input type="text" th:field="*{user.idUser}">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Return">
+</form>
+</body>
+</html>

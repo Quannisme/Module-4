@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh Sach Sach Muon</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+</head>
+<body>
+<table class="table table-striped table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Ten Sach</th>
+        <th>So Luong Sach</th>
+    </tr>
+    <tr th:each="b: ${book}" th:object="${b}">
+        <td th:text="*{idBook}"></td>
+        <td th:text="*{name}"></td>
+        <td th:text="*{quantity}"></td>
+        <td>
+            <a th:href="@{/bookU/borrow(id=*{idBook})}">Muon</a>
+        </td>
+        <td>
+            <a th:href="@{/bookU/return(id=*{idBook})}">Tra</a>
+        </td>
+    </tr>
+</table>
+<p th:text="${random}">Ma random vua roi la:</p>
+</body>
+</html>
