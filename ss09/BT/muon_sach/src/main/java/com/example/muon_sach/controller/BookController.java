@@ -1,10 +1,9 @@
 package com.example.muon_sach.controller;
 
-import com.example.muon_sach.Service.BookService;
-import com.example.muon_sach.Service.BookUserService;
-import com.example.muon_sach.Service.UserService;
+import com.example.muon_sach.service.BookService;
+import com.example.muon_sach.service.BookUserService;
+import com.example.muon_sach.service.UserService;
 import com.example.muon_sach.entity.BookUser;
-import com.example.muon_sach.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -45,9 +44,14 @@ public class BookController {
     @PostMapping("/borrow")
     public String doBorrow(Model model , @ModelAttribute("bookUser") BookUser bookUser2 , RedirectAttributes redirectAttributes)
     {
-        bookUserService.borrowBook(bookUser2.getUser().getIdUser(),bookUser2.getBook().getIdBook(),bookUser2.getId());
-        redirectAttributes.addAttribute("random",bookUser2.getId());
-        return "redirect:/bookU/" ;
+        try {
+            bookUserService.borrowBook(bookUser2.getUser().getIdUser(), bookUser2.getBook().getIdBook(), bookUser2.getId());
+            redirectAttributes.addAttribute("random", bookUser2.getId());
+            return "redirect:/bookU/";
+        }catch (Exception e){
+            redirectAttributes.addFlashAttribute("error","Quantity = 0. Can't rent that book");
+            return "redirect:/bookU/borrow";
+            }
     }
     @GetMapping("/return")
     public String viewReturn(Model model , @RequestParam("id") long id)

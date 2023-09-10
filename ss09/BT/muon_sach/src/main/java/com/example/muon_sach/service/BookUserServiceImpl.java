@@ -1,9 +1,8 @@
-package com.example.muon_sach.Service;
+package com.example.muon_sach.service;
 
 import com.example.muon_sach.entity.Book;
 import com.example.muon_sach.entity.BookUser;
 import com.example.muon_sach.entity.User;
-import com.example.muon_sach.repository.BookRepository;
 import com.example.muon_sach.repository.BookUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
