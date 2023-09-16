@@ -9,13 +9,6 @@
     top: 0;
     z-index: 100;
 }
-article{
-    width: 1227px;
-    margin: 0 auto;
-}
-article .new_list .new_item{
-    width: 20%;
-    padding: 5%;
-    float: left;
-    margin: 30px;
+.img_product,.content_product{
+    display: inline-block;
 }

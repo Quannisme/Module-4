@@ -8,12 +8,13 @@
 <h3  th:if="${error}" th:text="${error}"></h3>
 <form th:action="@{/bookU/borrow} " method="post" th:object="${bookUser}">
     <input type="hidden" th:value="${bookUser.id}" th:attr="name='id'" />
+<!--    ten id nay lay o entity BookUser-->
     <input type="hidden" th:value="${book.idBook}" th:attr="name='book'">
     <table>
         <tr>
             <td>ID Book</td>
             <td th:text="${book.idBook}">
-                <input type="hidden" id="book" name="book" th:value="*{book}">
+<!--                <input type="hidden" id="book" name="book" th:value="*{book}">-->
             </td>
         </tr>
         <tr>

@@ -34,11 +34,7 @@ public class BookUserServiceImpl implements BookUserService{
         User user=userService.findById(userId);
         Book book=bookService.findById(bookId);
         BookUser bookUser=bookUserRepository.findById(userBookId).orElse(null);
-        user.getBookUsers().remove(user);
-        book.getBookUsers().remove(book);
         bookUserRepository.delete(bookUser);
-        BookUser bookUser2=new BookUser(userBookId , book , user);
-        bookUserRepository.save(bookUser2);
         book.setQuantity(book.getQuantity()+1);
         bookService.update(book);
     }
