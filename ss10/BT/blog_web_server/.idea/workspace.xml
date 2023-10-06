@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5dbcbaba-8feb-438f-a530-dc2f0ffedc27" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/BlogWebServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/controller/RestBlog2Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/controller/RestCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/entity/Blog2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/entity/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/repository/BlogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/service/BlogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/service/BlogServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/service/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog_web_server/service/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/blog_web_server/BlogWebServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/src/main/java/com/example/blog_wed_server/BlogWedServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog_wed_server/src/test/java/com/example/blog_wed_server/BlogWedServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/java/com/example/gio_hang/GioHangApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/java/com/example/gio_hang/controller/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/java/com/example/gio_hang/controller/Product2Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/java/com/example/gio_hang/entity/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/java/com/example/gio_hang/entity/Product2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/java/com/example/gio_hang/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/java/com/example/gio_hang/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/java/com/example/gio_hang/service/ProductServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/resources/static/6319f1428d90a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/resources/static/bb1e5abe5df720d04ad019adf27e8e29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/resources/static/detail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/resources/templates/cart_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/resources/templates/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang/src/test/java/com/example/gio_hang/GioHangApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/java/com/example/gio_hang_bao/GioHangBaoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/java/com/example/gio_hang_bao/controller/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/java/com/example/gio_hang_bao/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/java/com/example/gio_hang_bao/entity/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/java/com/example/gio_hang_bao/entity/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/java/com/example/gio_hang_bao/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/java/com/example/gio_hang_bao/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/java/com/example/gio_hang_bao/service/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/resources/static/6319f1428d90a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/resources/static/bb1e5abe5df720d04ad019adf27e8e29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/resources/templates/cart_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/resources/templates/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gio_hang_bao/src/test/java/com/example/gio_hang_bao/GioHangBaoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT_View_Thu/6319f1428d90a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT_View_Thu/bb1e5abe5df720d04ad019adf27e8e29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT_View_Thu/detail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT_View_Thu/detail_product.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT_View_Thu/detail_product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT_View_Thu/https___hypebeast.com_image_2018_04_stussy-vintage-sale-h-beauty-youth-000.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT_View_Thu/share_fb_home.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT_View_Thu/view_shop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BT_View_Thu/view_shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/.idea/Session_Cookie.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/CartController.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/CartDto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/Product.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/ProductController.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/ProductDto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/ProductServiceImpl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/application.property.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/cart_list_html.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/product_detail_html.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Session_Cookie/product_list_html.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11/RestStudentController/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11/RestStudentController/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11/RestStudentController/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11/RestStudentController/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11/RestStudentController/RestStudentController.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11/RestStudentController/RestStudentController.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2VSgwWfcz3sNqm1IfbPENQCwzFe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code_Code_Code(G)/Module-4/ss10/BT/blog_web_server/src/main/java/com/example/blog_web_server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;afb2c6012cd32b55ad715061db0a6689&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code_Code_Code(G)\Module-4\ss10\BT\blog_web_server\src\main\java\com\example\blog_web_server" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BlogWebServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog_web_server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.blog_web_server.BlogWebServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5dbcbaba-8feb-438f-a530-dc2f0ffedc27" name="Changes" comment="" />
+      <created>1694835135834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694835135834</updated>
+      <workItem from="1694835136937" duration="5145000" />
+      <workItem from="1695042120659" duration="727000" />
+      <workItem from="1695043017748" duration="514000" />
+      <workItem from="1695043556763" duration="149000" />
+      <workItem from="1695044041575" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
