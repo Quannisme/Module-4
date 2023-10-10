@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List book</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+</head>
+<body>
+<a th:href="@{/product/createProduct}">Create Product</a>
+Name Product: <input type="text" id="name"/>
+Price: <input type="text" id="price">
+Loai san pham : <select  id="category" th:field="${category}">
+    <option th:each="c:${category}" th:value="${c.id}" th:text="${c.name}"></option>
+</select>
+<br/>
+<button onclick="searchByName();">Tim Ten San Pham</button>
+<button onclick="searchByPrice();">Tim Gia</button>
+<button onclick="searchByCategory();">Tim Loai</button>
+<table class="table table-striped table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Ten San Pham</th>
+        <th>Gia Bat Dau</th>
+        <th>Loai San Pham</th>
+        <th>Tinh Trang</th>
+    </tr>
+    <tbody id="result">
+    <tr th:each="p : ${product}" th:object="${p}">
+        <td th:text="*{id}"></td>
+        <td th:text="*{name}"></td>
+        <td th:text="*{price}"></td>
+        <td th:text="*{category.name}"></td>
+        <td th:text="*{status}"></td>
+        <td><a class="deletCustomer" th:href="@{/product/delete(id=${p.id})}">Delete</a>
+    </tr>
+    </tbody>
+</table>
+<div th:if="${product.totalPages > 1}">
+    <a th:each="pageNumber: ${pageNumbers}"
+       th:href="@{/product/listPagging(page=${pageNumber}, size=${product.size})}"
+       th:text="${pageNumber}"
+       th:class="${pageNumber == product.number + 1} ? active"></a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    function searchByPrice(){
+        let index1=$("#name").val();
+        $.ajax({
+            url: "http://localhost:8080/api/product/searchByPrice",
+            data:{
+                index:index1
+            },
+            type: "get",
+            dataType: "Json",
+            success:function (res){
+                let result="";
+                for(let i=0 ; i<res.length;i++)
+                {
+                    result +="<tr>"+
+                        "<td>"+res[i].id+"</td>"+
+                        "<td>"+res[i].name+"</td>"+
+                        "<td>"+res[i].price+"</td>"+
+                        "<td>"+res[i].category.name+"</td>"+
+                        "<td>"+res[i].status+"</td>"+
+                        "<td><a href='/product/delete?id=" + res[i].id + "'>Delete</a></td>" +
+                        "</tr>";
+                }
+                $("#result").html(result);
+            }
+        });
+    }
+    function searchByCategory(){
+        let category=$("#category").val();
+        $.ajax({
+            url:"http://localhost:8080/api/product/searchById",
+            data:{
+                index:category
+            },
+            type:"get",
+            dataType:"Json",
+            success:function (res) {
+                let result = "";
+                for (let i = 0; i < res.length; i++) {
+                    result += "<tr>" +
+                        "<td>" + res[i].id + "</td>" +
+                        "<td>" + res[i].name + "</td>" +
+                        "<td>" + res[i].price + "</td>" +
+                        "<td>" + res[i].category.name + "</td>" +
+                        "<td>" + res[i].status + "</td>" +
+                        "<td><a href='/product/delete?id=" + res[i].id + "'>Delete</a></td>" +
+                        "</tr>";
+                }
+                $("#result").html(result);
+            }
+        });
+    }
+    function searchByName(){
+        let index1=$("#name").val();
+        $.ajax({
+            url:"http://localhost:8080/api/product/searchByName",
+            data:{
+                index:index1
+            },
+            type:"get",
+            dataType:"Json",
+            success:function (res){
+                let result="";
+                for(let i=0 ; i<res.length;i++)
+                {
+                    result +="<tr>"+
+                        "<td>"+res[i].id+"</td>"+
+                        "<td>"+res[i].name+"</td>"+
+                        "<td>"+res[i].price+"</td>"+
+                        "<td>"+res[i].category.name+"</td>"+
+                        "<td>"+res[i].status+"</td>"+
+                        "<td><a href='/product/delete?id=" + res[i].id + "'>Delete</a></td>" +
+                        "</tr>";
+                }
+                $("#result").html(result);
+            }
+        });
+    }
+</script>
+</body>
+</html>

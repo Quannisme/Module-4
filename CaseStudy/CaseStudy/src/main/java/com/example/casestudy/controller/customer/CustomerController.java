@@ -37,6 +37,12 @@ public class CustomerController {
         model.addAttribute("customer" , customer.findAll());
         return "customer/listCustomer";
     }
+    @GetMapping("/listCustomer12")
+    public String viewListCustomer2(Model model)
+    {
+        model.addAttribute("customer" , customer.findAll());
+        return "customer/listCustomerDelete";
+    }
 
     @GetMapping("/createCustomer1")
     public String viewCreateCustomer(Model model)

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List book</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+</head>
+<body>
+<form th:action="@{customer/search}" method="post">
+
+</form>
+<p>Search</p>
+Name: <input type="text" id="name"/>
+<br/>
+<button onclick="searchByName();">Search</button>
+<h1>List Blog</h1>
+<table class="table table-striped table-hover">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>gender</th>
+    <th>address</th>
+    <th>birthday</th>
+    <th>Email</th>
+    <th>Id Card</th>
+    <th>Phone</th>
+    <th>Type</th>
+  </tr>
+  <tbody id="result">
+<!--  <tr th:each="b : ${customer}" th:object="${b}">-->
+<!--    <td th:text="*{id}"></td>-->
+<!--    <td th:text="*{name}"></td>-->
+<!--    &lt;!&ndash;    <td th:text="${b.gender ? 'Male' : 'Female'}"></td>&ndash;&gt;-->
+<!--    <td th:text="*{gender}"></td>-->
+<!--    <td th:text="*{address}"></td>-->
+<!--    <td th:text="*{#dates.format(birthDay, 'dd/MM/yyyy')}"></td>-->
+<!--    <td th:text="*{email}"></td>-->
+<!--    <td th:text="*{idCard}"></td>-->
+<!--    <td th:text="*{phone}"></td>-->
+<!--    <td th:text="*{customerType.typeName}"></td>-->
+<!--    <td><a th:href="@{/customer/detail(id=${b.id})}">Detail</a></td>-->
+<!--    <td> <a th:href="@{/customer/edit(id=${b.id})}">Edit</a></td>-->
+<!--    <td><a class="deletCustomer" th:href="@{/customer/delete(id=${b.id})}">Delete</a>-->
+<!--  </tr>-->
+  </tbody>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    list()
+  });
+  function list() {
+    $.ajax({
+      type: "get",
+      url: "http://localhost:8080/api/customer/findAll",
+      success: function(responseData) {
+        let result = "";
+        responseData.forEach(function(item) {
+          result += "<tr>" +
+                  "<td>" + item.id + "</td>" +
+                  "<td>" + item.name + "</td>" +
+                  "<td>" + item.gender + "</td>" +
+                  "<td>" + item.address + "</td>" +
+                  "<td>" +  new Date(item.birthDay).toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric"
+                  }) + "</td>"+
+                  "<td>" + item.email + "</td>" +
+                  "<td>" + item.idCard + "</td>" +
+                  "<td>" + item.phone + "</td>" +
+                  "<td>" + item.customerType.typeName + "</td>" +
+                  "<td>"+
+                      "<button  type='button' onclick='function openModalRemoveSinhVien(${item.id})'>"+"Xoa"+
+                      "</button>"+
+                  "</td>"+
+                  "</tr>";
+        });
+        $("#result").html(result);
+      }
+    });
+  }
+  function openModalRemoveSinhVien(customerId){
+    $.ajax({
+      type:"delete",
+      url:"http://localhost:8080/api/customer/deleteCustomer?id=?"+customerId,
+      data: JSON.stringify(customerId),
+      dataType: 'json',
+      success:function ()
+    });
+  }
+  function searchByName() {
+    let index=$("#name").val();
+    $.ajax({
+      url:"http://localhost:8080/api/customer/searchCustomer",
+      data:{
+        index:index
+      },
+      type:"get",
+      dataType:"Json",
+      success:function (res){
+        let result="";
+        for(let i=0 ; i<res.length;i++)
+        {
+          result +="<tr>"+
+                  "<td>"+res[i].id+"</td>"+
+                  "<td>"+res[i].name+"</td>"+
+                  "<td>"+(res[i].gender ? 'Male' : 'Female')+"</td>"+
+                  "<td>"+res[i].address+"</td>"+
+                  "<td>" +  new Date(res[i].birthDay).toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric"
+                  }) + "</td>"+
+                  "<td>"+res[i].email+"</td>"+
+                  "<td>"+res[i].idCard+"</td>"+
+                  "<td>"+res[i].phone+"</td>"+
+                  "<td>"+res[i].customerType.typeName+"</td>"+
+                  "<td><a href='/customer/delete?id=" + res[i].id + "'>Delete</a></td>" +
+                  "<td><a href='/customer/Edit?id=" + res[i].id + "'>eidt</a></td>" +
+                  "</tr>";
+        }
+        $("#result").html(result);
+      }
+    });
+  }
+  $(document).ready(function (){
+    $('.deletCustomer').click(function (event){
+      let a=$(this);
+      let customerId=a.attr("href");
+      $.ajax({
+        type: "DELETE",
+        url:"http://localhost:8080/api/customer/deleteCustomer?id=?"+customerId,
+        success:function (data){
+          a.parent().parent().remove();
+        }
+      });
+      event.preventDefault();
+    });
+  })
+</script>
+</body>
+</html>

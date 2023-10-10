@@ -17,7 +17,7 @@ public class Customer {
     @Column(name = "customer_name" , columnDefinition = "varchar(45)")
     private String name;
     @Column(name = "customer_birthday")
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @NotNull
     private java.util.Date birthDay;
     @Column(name = "customer_gender")

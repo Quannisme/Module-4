@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form th:action="@{/product/createProduct}" method="post" th:object="${product}">
+  <table>
+    <tr>
+      <td>Ten San Pham:</td>
+      <td><input type="text" th:field="*{name}"></td>
+      <td><span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span></td>
+    </tr>
+    <tr>
+      <td>Gia Bat Dau:</td>
+      <td><input type="text" th:field="*{price}"></td>
+      <td><span th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></span></td>
+    </tr>
+    <tr>
+      <td>Tinh Trang:</td>
+      <td><input type="text" th:field="*{status}"></td>
+      <td><span th:if="${#fields.hasErrors('status')}" th:errors="*{status}"></span></td>
+    </tr>
+    <tr>
+      <td>Loai San Pham</td>
+      <td>
+        <select th:field="*{category}">
+          <option th:each="c : ${category}" th:value="${c.getId()}" th:text="${c.getName()}"/>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <input type="submit" value="Create">
+</form>
+</body>
+</html>

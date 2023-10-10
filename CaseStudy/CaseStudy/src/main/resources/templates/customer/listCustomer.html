@@ -39,7 +39,7 @@ Name: <input type="text" id="name"/>
     <td th:text="*{customerType.typeName}"></td>
     <td><a th:href="@{/customer/detail(id=${b.id})}">Detail</a></td>
     <td> <a th:href="@{/customer/edit(id=${b.id})}">Edit</a></td>
-    <td><a th:href="@{/customer/delete(id=${b.id})}">Delete</a>
+    <td><a class="deletCustomer" th:href="@{/customer/delete(id=${b.id})}">Delete</a>
   </tr>
   </tbody>
 </table>
@@ -80,54 +80,20 @@ Name: <input type="text" id="name"/>
       }
     });
   }
-  function showFormAdd(){
-    let form = "<tr>" +
-            "<td>ID:</td>" +
-            '<td><input type="text" th:field="*{id}"></td>' +
-            "</tr>" +
-            "<tr>" +
-            "<td>Name:</td>" +
-            '<td><input type="text" th:field="*{name}"></td>' +
-            "</tr>" +
-            "<tr>" +
-            "<td>BirthDay:</td>" +
-            '<td><input type="text" th:field="*{birthDay}"></td>' +
-            "</tr>" +
-            "<tr>" +
-            "<td>Gender:</td>" +
-            "<td>" +
-            '<input type="radio" th:field="*{gender}" value="true" id="male"/>' +
-            '<label htmlFor="male">Male</label>' +
-            '<input type="radio" th:field="*{gender}" value="false" id="female"/>' +
-            '<label htmlFor="female">Female</label>' +
-            "</td>" +
-            "</tr>" +
-            "<tr>" +
-            "<td>ID Card</td>" +
-            '<td><input type="text" th:field="*{idCard}"></td>' +
-            "</tr>" +
-            "<tr>" +
-            "<td>Phone</td>" +
-            '<td><input type="text" th:field="*{phone}"></td>' +
-            "</tr>" +
-            "<tr>" +
-            "<td>email</td>" +
-            '<td><input type="text" th:field="*{email}"></td>' +
-            "</tr>" +
-            "<tr>" +
-            "<td>address</td>" +
-            '<td><input type="text" th:field="*{address}"></td>' +
-            "</tr>" +
-            "<tr>" +
-            "<td>Customer Type</td>" +
-            "<td>" +
-            '<select th:field="*{customerType}">' +
-            '<option th:each="c : ${customerType}" th:value="${c.getTypeId()}" th:text="${c.getTypeName()}"/>' +
-            "</select>" +
-            "</td>" +
-            "</tr>"+
-            '<button onClick="saveCustomer()">ADD</button>';
-  }
+  $(document).ready(function (){
+          $('.deletCustomer').click(function (event){
+            let a=$(this);
+            let customerId=a.attr("href");
+            $.ajax({
+              type: "DELETE",
+              url:"http://localhost:8080/api/customer/deleteCustomer?id=?"+customerId,
+              success:function (data){
+                a.parent().parent().remove();
+              }
+            });
+            event.preventDefault();
+  });
+  })
 </script>
 </body>
 </html>

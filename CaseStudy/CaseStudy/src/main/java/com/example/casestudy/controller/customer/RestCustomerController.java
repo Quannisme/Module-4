@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,5 +26,15 @@ public class RestCustomerController {
     public ResponseEntity<?>getAddCustomer(@RequestBody Customer customer){
         customerService.create(customer);
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+    @DeleteMapping("/deleteCustomer")
+    public ResponseEntity<?>getDeleteCustomer(@RequestParam("id")int id){
+        customerService.delete(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+    @GetMapping("/findAll")
+    public ResponseEntity<List<Customer>>getFindAll(Model model){
+        List<Customer>list=customerService.findAll();
+        return new ResponseEntity<>(list,HttpStatus.OK);
     }
 }

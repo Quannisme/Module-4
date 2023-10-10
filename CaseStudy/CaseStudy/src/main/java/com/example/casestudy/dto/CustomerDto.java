@@ -1,6 +1,7 @@
 package com.example.casestudy.dto;
 
 import com.example.casestudy.util.Gender;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -10,6 +11,7 @@ import java.util.Date;
 public class CustomerDto {
     private int id;
     private String name;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private java.util.Date birthDay;
     private Gender gender;
     @NotBlank(message = "{customer.idCard}")
